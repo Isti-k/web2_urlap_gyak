@@ -1,0 +1,57 @@
+#kot_m label::after{
+    content: "*";
+    color: red;
+}
+#kot_m input{
+    width: 200px;
+    float: right;
+    clear: both;
+    margin-right: 150px;
+}
+#kot_m2>input{
+    width: 200px;
+    float: right;
+    clear: both;
+    margin-right: 150px;
+}
+#kot_m{
+    margin: 10px;
+}
+#kot_m2{
+    margin: 10px;
+}
+form{
+    margin: auto;
+    max-width: 700px;
+    background-color: gainsboro;
+    margin-top: 0%;
+}
+fieldset{
+    background-color: azure;
+    border-color: lightblue;
+    max-width: 650px;
+    margin: auto;
+}
+.gomb1{
+    border: 1px solid green;
+    background-color: limegreen;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+#gomb2{
+    border: 1px solid;
+    background-color: lightblue;
+    color: white;
+    margin: 10px;
+}
+#box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media only screen and (max-width:720px) {
+    #box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

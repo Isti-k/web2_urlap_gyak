@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="styles.css">
+    <title>kovacs Istvan Gabor</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset id="kot_m">
+            <legend class="gomb1">regisztráció</legend>
+            <label for="fname">felhasználónév</label>
+            <input type="text" id="fname" name="fname" placeholder="csak ékezetmentes betűk"><br><br>
+            <label for="lname">jelszó</label>
+            <input type="text" id="lname" name="lname" placeholder="min. 3 karakter"><br><br>
+            <label for="email">e-mail cím</label>
+            <input type="text" id="email" name="email" placeholder="vmi@vmi.hu"><br><br>
+        </fieldset>
+        <fieldset id="kot_m2">
+            <legend class="gomb1">születés</legend>
+            <label for="szul_date">születési dátum</label>
+            <input type="text" id="szul_date" name="szul_date" placeholder="éééé. hh. nn."><br><br>
+            <fieldset id="box">
+                <legend id="gomb2">személyes</legend>
+                <div>
+                    <input type="checkbox" id="angol" name="angol" value="angol">
+                    <label for="angol"> angol</label><br>
+                    <input type="checkbox" id="nemet" name="nemet" value="nemet">
+                    <label for="nemet"> német</label><br>
+                </div>
+                <div>
+                    <label for="szak">Választott szak:</label>
+                    <select id="szak" name="szak">
+                        <option value="SZFA2">SZFA2</option>
+                        <option value="SZFA1">SZFA1</option>
+                        <option value="SZFB">SZFB</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" id="ferfi" name="ferfi" value="ferfi">
+                    <label for="ferfi">férfi</label><br>
+                    <input type="radio" id="no" name="no" value="no">
+                    <label for="no">nő</label><br>
+                </div>
+            </fieldset>
+        </fieldset>
+        <input class="gomb1" type="submit">
+    </form>
+</body>
+</html>
