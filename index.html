@@ -13,11 +13,11 @@
         <fieldset id="kot_m">
             <legend class="gomb1">regisztráció</legend>
             <label for="fname">felhasználónév</label>
-            <input type="text" id="fname" name="fname" placeholder="csak ékezetmentes betűk"><br><br>
+            <input type="text" id="fname" name="fname" placeholder="csak ékezetmentes betűk" pattern="\w+"><br><br>
             <label for="lname">jelszó</label>
-            <input type="text" id="lname" name="lname" placeholder="min. 3 karakter"><br><br>
+            <input type="text" id="lname" name="lname" placeholder="min. 3 karakter" pattern=".{3,}[A-Za-z0-9]"><br><br>
             <label for="email">e-mail cím</label>
-            <input type="text" id="email" name="email" placeholder="vmi@vmi.hu"><br><br>
+            <input type="text" id="email" name="email" placeholder="vmi@vmi.hu" pattern="^([a-zA-z][a-z-A-Z0-9_]+[a-zA-z0-9_]+)\.hu$"><br><br>
         </fieldset>
         <fieldset id="kot_m2">
             <legend class="gomb1">születés</legend>
